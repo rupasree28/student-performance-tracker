@@ -4,7 +4,7 @@
 Student Performance Tracker is a Spring Boot application that provides RESTful APIs for managing students and their marks. 
 It allows users to perform CRUD operations on students, add marks, and retrieve performance-based analytics such as top/bottom performers, students in a marks range, or students with exact scores.  
 
-The application uses **MySQL** for persistent storage, **Spring Data JPA** for ORM, and is fully tested with **JUnit 5** and **Mockito**. APIs are accessible via **Postman** or directly through a browser using Swagger UI.
+The application uses **MySQL** for persistent storage, **Spring Data JPA** for ORM, and is fully tested with **JUnit 5**. APIs are accessible via **Postman** or directly through a browser using Swagger UI.
 
 ---
 
