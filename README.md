@@ -33,6 +33,10 @@ The application uses **MySQL** for persistent storage, **Spring Data JPA** for O
 
 ## Getting Started
 
+Created a Mysql Tables to store data of Students we have a Structure like below+>
+<img width="646" height="370" alt="Screenshot 2025-09-06 165707" src="https://github.com/user-attachments/assets/3d4cfd1f-97e2-44ad-916a-c1b2e381a3d1" />
+
+
 ### Prerequisites
 - Java 17
 - Maven
