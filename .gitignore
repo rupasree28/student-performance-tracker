@@ -1,0 +1,19 @@
+# Maven build
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# Eclipse / IntelliJ
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# OS & logs
+.DS_Store
+Thumbs.db
+*.log
+
+# Local overrides (don’t push secrets)
+application-*.properties
