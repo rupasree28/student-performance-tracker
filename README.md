@@ -75,6 +75,9 @@ Open Swagger UI at: http://localhost:8080/swagger-ui.html to test APIs.
 
 Open Postman Tool and perform operations by passing in the form of JSON and visualize the changes everywhere
 
+<img width="1594" height="843" alt="Screenshot 2025-09-06 164827" src="https://github.com/user-attachments/assets/33c91265-f2cb-48f7-aeb2-510435d60b79" />
+
+
 API Endpoints
 Students
 
