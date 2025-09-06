@@ -39,10 +39,89 @@ The application uses **MySQL** for persistent storage, **Spring Data JPA** for O
 - MySQL Server
 - Postman (optional, for API testing)
 
+Project Structure
+src/
+├─ main/
+│  ├─ java/com/example/demo/
+│  │  ├─ config/      # Swagger configuration
+│  │  ├─ controller/  # REST controllers
+│  │  ├─ dto/         # Data Transfer Objects
+│  │  ├─ exception/   # Global exception handling
+│  │  ├─ model/       # JPA entities
+│  │  ├─ repository/  # JPA repositories
+│  │  └─ service/     # Business logic
+│  └─ resources/
+│     └─ application.properties
+├─ test/               # JUnit & Mockito tests
+
 ### Setup Steps
 1. Clone the repository:
-```bash
+bash
 git clone https://github.com/yourusername/student-performance-tracker.git
 cd student-performance-tracker
 
    git clone https://github.com/your-username/student-performance-tracker.git
+
+
+
+
+Build and run the application:
+
+mvn clean install
+mvn spring-boot:run
+
+
+Open Swagger UI at: http://localhost:8080/swagger-ui.html to test APIs.
+
+Open Postman Tool and perform operations by passing in the form of JSON and visualize the changes everywhere
+
+API Endpoints
+Students
+
+GET /api/students - Retrieve all students
+
+GET /api/students/{id} - Get student by ID
+
+POST /api/students - Add new student
+
+PUT /api/students/id/{id} - Update student
+
+DELETE /api/students/{id} - Delete student
+
+Marks
+
+GET /api/marks/{studentId} - Get all marks for a student
+
+POST /api/marks/{studentId} - Add a mark to a student
+
+Performance Queries
+
+GET /api/students/top?limit=5 - Top performing students
+
+GET /api/students/bottom?limit=5 - Bottom performing students
+
+GET /api/students/range?min=50&max=90 - Students in marks range
+
+GET /api/students/exact?value=75 - Students with exact average marks
+
+Testing
+
+Unit tests written with JUnit 5.
+
+Mocked dependencies with Mockito.
+
+Run tests with:
+
+mvn test
+
+
+
+Contribution
+
+Fork the repository
+
+Create a new branch
+
+Make your changes
+
+Open a Pull Request
